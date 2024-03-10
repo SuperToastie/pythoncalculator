@@ -1,36 +1,131 @@
+"""Basic Python Calculator"""
 import math
 
 def add(x, y):
+    """
+    Add two numbers.
+
+    Parameters:
+    x (float): First number.
+    y (float): Second number.
+
+    Returns:
+    float: The sum of x and y.
+    """
     return x + y
 
 def subtract(x, y):
+    """
+    Subtract two numbers.
+
+    Parameters:
+    x (float): First number.
+    y (float): Second number.
+
+    Returns:
+    float: The difference between x and y.
+    """
     return x - y
 
 def multiply(x, y):
+    """
+    Multiply two numbers.
+
+    Parameters:
+    x (float): First number.
+    y (float): Second number.
+
+    Returns:
+    float: The product of x and y.
+    """
     return x * y
 
 def divide(x, y):
+    """
+    Divide one number by another.
+
+    Parameters:
+    x (float): Numerator.
+    y (float): Denominator.
+
+    Returns:
+    float or str: The quotient of x and y, or an error message if division by zero is attempted.
+    """
     if y == 0:
         return "Error: Cannot divide by zero"
     else:
         return x / y
 
 def sin(x):
+    """
+    Calculate the sine of an angle.
+
+    Parameters:
+    x (float): The angle in degrees.
+
+    Returns:
+    float: The sine of x degrees.
+    """
     return math.sin(math.radians(x))
 
 def cos(x):
+    """
+    Calculate the cosine of an angle.
+
+    Parameters:
+    x (float): The angle in degrees.
+
+    Returns:
+    float: The cosine of x degrees.
+    """
     return math.cos(math.radians(x))
 
 def tan(x):
+    """
+    Calculate the tangent of an angle.
+
+    Parameters:
+    x (float): The angle in degrees.
+
+    Returns:
+    float: The tangent of x degrees.
+    """
     return math.tan(math.radians(x))
 
 def arcsin(x):
+    """
+    Calculate the arcsine of a value.
+
+    Parameters:
+    x (float): The value.
+
+    Returns:
+    float: The angle in degrees whose sine is x.
+    """
     return math.degrees(math.asin(x))
 
 def arccos(x):
+    """
+    Calculate the arccosine of a value.
+
+    Parameters:
+    x (float): The value.
+
+    Returns:
+    float: The angle in degrees whose cosine is x.
+    """
     return math.degrees(math.acos(x))
 
 def arctan(x):
+    """
+    Calculate the arctangent of a value.
+
+    Parameters:
+    x (float): The value.
+
+    Returns:
+    float: The angle in degrees whose tangent is x.
+    """
     return math.degrees(math.atan(x))
 
 print("Welcome to the Python Calculator!")
